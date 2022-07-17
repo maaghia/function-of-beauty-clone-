@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="carousel">
-            <div class="carousel-1"></div>
+            <div class="carousel-1"><img src="images/carousel-1.webp" alt=""></div>
             <div class="carousel-2"></div>
             <div class="carousel-3"></div>
             <div class="carousel-4"></div>
@@ -39,8 +39,8 @@
             <div class="carousel-8"></div>
             <div class="carousel-9"></div>
 
-            <img src="images/right-arrow-dark.svg" alt="right-arrow">
-            <img src="images/left-arrow-dark.svg" alt="left-arrow">
+            <button class="right-button"><img src="images/right-arrow-dark.svg" alt="right-arrow" id="right-arrow"></button>
+            <button><img src="images/left-arrow-dark.svg" alt="left-arrow" id="left-arrow"></button>
         </div>
         <div class="mini-pics"></div>
         <button class="take-the-quiz">take the quiz</button>
@@ -80,7 +80,7 @@
         <div class="cards">
             <div class="ingredients-card">
                 <div class="content-1">
-                    <p>1/3</p>
+                    <p class="nbr-tag">1/3</p>
                 <h1>INGREDIENTS</h1>
                 <p>All Function of Beauty products are formulated without sulfates, parabens, phthalates, or gluten, and are always certified vegan and cruelty-free. Our shampoos and conditioners can also be made silicone-free, dye-free, or fragrance-free, based on your preferences. We use more than 60 natural ingredients in our custom formulations to help you achieve your ultimate hair goals.</p>
                 <button>TAKE THE QUIZ</button>
@@ -91,23 +91,23 @@
             </div>
             <div class="usage-card">
                 <div class="content-2">
-                    <p>2/3</p>
+                    <p class="nbr-tag">2/3</p>
                 <h1>RECOMMENDED USE</h1>
                 <p>Apply shampoo to wet hair and massage into a lather. Rinse and repeat (if necessary). Follow with enough conditioner to coat your strands evenly from mid-shaft to ends, leaving it on for 1-2 minutes before rinsing it out thoroughly.</p>
                 <button>DESIGN YOUR FORMULA</button>
                 </div>
-                <div class="image-1">
+                <div class="image-2">
                     <img src="images/tile-2.webp" alt="pink-shampoo-in-bottle">
                 </div>
             </div>
             <div class="great-card">
                 <div class="content-3">
-                    <p>3/3</p>
+                    <p class="nbr-tag">3/3</p>
                 <h1>GREAT FOR...</h1>
                 <p>The Function of Beauty shampoo and conditioner is recommended for all hair types as each product is specially formulated to address your unique hair goals and needs.</p>
                 <button>GET STARTED</button>
                 </div>
-                <div class="image-1">
+                <div class="image-3">
                     <img src="images/tile-3.webp" alt="hair-types">
                 </div>
             </div>
@@ -115,34 +115,37 @@
         </div>
         <div class="rating-stats">
             <h1>the people have spoken</h1>
-            <div class="rating">
-                <img src="images/stars.png" alt="rating-stars">
-                <span>4.7/5</span>
+            <div class="rating-wrapper">
+                <div class="rating">
+                    <img src="images/stars.png" alt="rating-stars">
+                    <span>4.7/5</span>
+                </div>
+                <div class="stats-fraction">
+                    <p>86,271 REVIEWS</p>
+                </div>
             </div>
-            <div class="stats-fraction">
-                <p>86,271 REVIEWS</p>
-            </div>
+            
         </div>
         <div class="questions">
             <h1>got questions?</h1>
             <div class="questions-accordeon">
                 <ul class="accordion">
                     <li class="question-1">
-                      <label for="question-1">I’m not sure what my hair profile is - help!</label>
+                      <label for="question-1">I’m not sure what my hair profile is - help!<span><button><img src="images/check-mark.svg" alt="get-answer"></button></span></label>
                       <input id="question-1" type="checkbox" name="question-1" />
-                      <div class="answer">
-                        <p>Of course - here are some more in-depth descriptions of each part of the hair quiz:</p>
-                        <h2>HAIR TYPE</h2>
-                        <ul>
+                        <div class="answer">
+                            <p>Of course - here are some more in-depth descriptions of each part of the hair quiz:</p>
+                            <h2>HAIR TYPE</h2>
+                            <ul>
                             <li> Straight: Hair strands tend to not have a bend or a curl. Hair Type 1</li>
                             <li>Wavy: Somewhere between straight and curly. Hair Type 2.</li>
                             <li>Curly: Defined curl, S-shape, or loopy pattern. May be prone to frizz. Hair Type 3</li>
                             <li>Coily: Tight curls, spirals, or zig-zag patterns. Sometimes referred to as “kinky” or “textured” hair. Hair Type 4.</li>
-                        </ul>
-                    </div>
+                            </ul>
+                        </div>
                     </li>
                     <li class="question-2">
-                        <label for="question-2">What are the fragrances like?</label>
+                        <label for="question-2">What are the fragrances like?<span><button><img src="images/check-mark.svg" alt="get-answer"></button></span></label>
                         <input id="question-2" type="checkbox" name="question-2" />
                         <div class="answer">
                             <p>We like to think we have something for everyone. Our signature fragrances are:</p>
@@ -158,14 +161,14 @@
                         </div>
                     </li>
                     <li class="question-3">
-                        <label for="question-3">Do your products work for all ethnicities?</label>
+                        <label for="question-3">Do your products work for all ethnicities?<span><button><img src="images/check-mark.svg" alt="get-answer"></button></span></label>
                         <input id="question-3" type="checkbox" name="question-3" />
                         <div class="answer">
                           <p>Absolutely! Every single one of our products is individually filled and formulated based on your unique hair type and hair goals, which means they’ll actually work with your hair, not against it. We also never formulate with sulfates, parabens, phthalates, mineral oils, or gluten, so you can rest assured knowing that all of our products are safe and effective, regardless of your ethnicity or hair type.</p>
                         </div>
                     </li>
                     <li class="question-4">
-                        <label for="question-4">How do I choose my hair goals?</label>
+                        <label for="question-4">How do I choose my hair goals? <span><button><img src="images/check-mark.svg" alt="get-answer"></button></span></label>
                         <input id="question-4" type="checkbox" name="question-4" />
                         <div class="answer">
                             <p>You can give your hair care formula an extra boost by choosing up to five of our 18 hair goals:</p>
@@ -193,7 +196,7 @@
                     </li>
                 </ul>
             </div>
-            <button class="order-now">order now</button>
+            <div><button class="order-now">order now</button></div>
         </div>
     </main>
     <footer>

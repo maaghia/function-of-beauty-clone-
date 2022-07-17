@@ -10,10 +10,18 @@
 body{
 
 }*/
+html{
+    width: 100%;
+}
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+body{
+    width: 100%;
 }
 header{
     width: 50px;
@@ -46,6 +54,7 @@ nav img{
     font-size: 18px;
 }
 .big-title h2{
+    text-align: center;
     padding: 20px;
 }
 .stats{
@@ -60,7 +69,32 @@ nav img{
 .stats p{
     font-size: 14px;
     color: #4c5150;
-    margin: 0 px 0px 0px 20px;
+    margin: 0px 0px 0px 20px;
+}
+.carousel img{
+    width: 360px;
+    height: 365px;
+    padding: 20px;
+}
+.carousel button{
+    width: 25px;
+    height: 25px;
+    background-color: #e8f0f0;
+    opacity: 70%;
+    position: relative;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: 230px;
+    border: none;
+    background-image: url("images/left-arrow-dark.svg");
+    cursor: pointer;
+}
+.carousel button .right-button{
+    position: relative;
+    left: 40px;
+}
+#right-arrow, #left-arrow{
+    display: none;
 }
 
 .take-the-quiz{
@@ -156,6 +190,8 @@ nav img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    width: 370px;
 }
 .ingredients h1{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -188,6 +224,194 @@ nav img{
     width: 350px;
     border-radius: 5px;
 }
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 580px;
+    margin-top: 20px;
+}
+.cards h1{
+    color: #2fa79b;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 30px;
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.cards p{
+    line-height: 30px;
+    font-size: 20px;
+    color: #878e8d;
+    letter-spacing: 1px;
+    
+}
+.cards button{
+    margin: 40px 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    padding: 10px;
+    background-color: #69c8b2;
+}
+.content-1, .content-2, .content-3{
+    width: 370px;
+    padding: 20px;
+}
+.cards img{
+    width: 360px;
+    height: 365px;
+    padding: 20px;
+    
+}
+.content-2 button{
+    background-color: #787887 !important;
+}
+.nbr-tag{
+    color: #4c5150;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.rating-stats{
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px 90px;
+}
+.rating-stats h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #262929;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+.rating-wrapper{
+   background-color: #fafafa;
+   padding: 30px;
+   width: 315px;
+   height: 125px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.rating img{
+    height: 30px;
+    width: 150px;
+    position: relative;
+    bottom: 2.5px;
+}
+.rating span{
+    font-size: 28px;
+    color: #4c5150;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.6px;
+    font-weight: 400;
+}
+.stats p{
+    font-size: 16px;
+    color: #4c5150;
+    margin: 0 px 0px 0px 20px;
+}
+.stats-fraction p{
+    color: #4c5150;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    
+}
+.questions h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #262929;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+
+}
+.questions-accordeon{
+    width: 365px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.accordion li{
+    padding: 18px;
+    border-bottom: 0.6px solid #535454;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    color: #262929;
+    
+    padding-left: 0;
+}
+.order-now{
+    margin: 60px 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    padding: 15px;
+    background-color: #69c8b2;
+
+}
+.question-1 span button{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    left: 280px;
+    bottom: 3px;
+}
+.question-2 span button{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    left: 76px;
+    bottom: 3px;
+}
+.question-3 span button{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    left: 226px;
+    bottom: 3px;
+}
+.question-4 span button{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    left: 46px;
+    bottom: 3px;
+}
 
 .answer{
     height: 0;
@@ -212,4 +436,24 @@ input:checked + .answer > li {
     padding: 0.7em 1em;
     height: 1.4em;
     opacity: 1;
+}
+footer{
+    background-color: #fdf1f6;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+.social-media-icons img{
+    padding: 0px 15px;
+}
+.links a{
+    padding: 0px 15px;
+    color: #878e8d;
+    font-size: 16px;
+    padding: 0px 7px;
+    text-decoration: none;
 }
