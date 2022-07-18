@@ -208,6 +208,7 @@ main{
     }
   
     .carousel__viewport {
+      display: block;
       position: absolute;
       top: 0;
       right: 0;
@@ -219,7 +220,6 @@ main{
       scroll-behavior: smooth;
       scroll-snap-type: x mandatory;
       height: 100vw;
-  
     }
   
     .carousel__slide {
@@ -829,3 +829,169 @@ footer{
 button, a {
   cursor: pointer;
 }
+
+.carousel-web, .web-text, .web-bar {
+  display: none;
+}
+
+/**************************************************************
+* Large screens (Aka Desktop and Tablet)                      *
+***************************************************************/
+
+@media screen and (min-width: 565px) {
+  .take-the-quiz {
+      margin-top: 225px;
+    }
+
+    .badges-grid img {
+      width: 250px;
+      height: 250px;
+    } 
+}
+
+@media screen and (min-width: 860px) {
+  .hero-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px 50px;
+  }
+
+  .carousel {
+    display: none;
+  }
+
+  .carousel-web, .web-text {
+    display: inline-block;
+  }
+
+  .carousel-web {
+    width: 40%;
+    height: auto;
+  }
+  .carousel-web img {
+    width: 100%;
+    height: auto;
+  }
+
+  .web-text {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .big-title {
+    align-items: flex-start;
+    width: 40%;
+  }
+
+  .big-title h2 {
+    padding: 0px;
+    width: 300px;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .web-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .pics {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+  }
+
+  .web-bar{
+    width: 100%;
+  }
+
+  .pics img {
+    width:55px;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .quiz-button {
+    width:40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .quiz-button button {
+    width: 300px;
+    margin: 0;
+  }
+
+  .mobile-text {
+    display: none;
+  }
+
+  .flex-2 {
+    margin: 110px 0;
+  }
+
+  .badges-grid {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+  }
+
+  .badges-grid img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .great-card,
+  .usage-card,
+  .ingredients-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top:20px;
+    margin-bottom: 50px;
+  }
+
+  .content-1, .content-2, .content-3, .image-1, .image-2, .image-3 {
+    width: 40%;
+  }
+
+  .image-1 img, .image-2 img, .image-3 img {
+    width: 100%;
+    height:auto;
+  }
+
+  .usage-card {
+    flex-direction: row-reverse;
+  }
+
+  .questions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:20px;
+  }
+
+  .questions .right {
+    width: 55%;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
