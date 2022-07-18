@@ -4,3 +4,5 @@
 4. Always start with the mobile version, start from `360px` and go up! We had a lot of issues with smaller screens, content was overlapping, overflowed because some elements had a width that is bigger the the vw of the device. Pay attention.
 5. Use comments in your style.css to separate sections.
 6. If you want to adjust the width of an image within your website, change the width `width: x px`, and then set `height: auto`. This way the pic will look the same :c.
+
+OK QUEEN

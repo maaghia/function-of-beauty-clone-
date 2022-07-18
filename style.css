@@ -63,11 +63,6 @@ html {
 /* Navigation bar */
 
 .desktop-nav {
-  /* visibility: hidden; */
-  /* You should set it to display none, and here the diff,
-    when you do display none, the tag comme si It gets removed from html tu vois?
-    when you do visibility hidden the item comme si It stays there BUT plassto 
-    tweli blank! This was messing with navbar tae mobile */
   display: none;
 }
 
@@ -91,7 +86,6 @@ nav {
 }
 
 .spacer {
-  /* Just add it to do some centering, I hate positioning */
   width: 32px;
   height: 32px;
 }
@@ -424,6 +418,7 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 
 .take-the-quiz{
