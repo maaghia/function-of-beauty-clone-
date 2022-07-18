@@ -1,357 +1,752 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>function-of-beauty-clone</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                  </svg>
-            </div>
-            <div class="logo">
-                <img src="images/function-ofbeauty.PNG" alt="brand-logo">
-            </div>
-            <div class="desktop-nav">
-                <div class="quiz">
-                    <a href="#quiz-page">quiz <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                    </svg></span></a>
-                </div>
-                <div class="products">
-                    <a href="#quiz-page">products <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                    </svg></span></a>
-                </div>
-                <div class="reviews">
-                    <a href="#quiz-page">reviews <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                    </svg></span></a>
-                </div>
-                <div class="logo-desktop">
-                    <a href="#"><img src="images/function-ofbeauty.PNG" alt="brand-logo"></a>
-                </div>
-                <div class="about">
-                    <a href="#quiz-page">about <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                    </svg></span></a>
-                </div>
-                <div class="account">
-                    <a href="#quiz-page">account <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                    </svg></span></a>
-                </div>
-                <div class="cart">
-                    <a href="#quiz-page">cart <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                    </svg></span></a>
-                </div>
-                
-            </div>
-        </nav>
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="white"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </div>
+        <!-- I personally think that It would be better if we do it ourselves -->
+        <div class="logo">
+          <h1>function</h1>
+          <div class="wrapper">
+            <div class="separator"></div>
+            <h6>of beauty</h6>
+          </div>
+        </div>
+        <span class="spacer"></span>
+        <!-- The links in the desktop page -->
+        <div class="desktop-nav">
+          <div class="quiz">
+            <a href="#quiz-page"
+              >quiz
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  /></svg></span
+            ></a>
+          </div>
+          <div class="products">
+            <a href="#quiz-page"
+              >products
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  /></svg></span
+            ></a>
+          </div>
+          <div class="reviews">
+            <a href="#quiz-page"
+              >reviews
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  /></svg></span
+            ></a>
+          </div>
+          <div class="logo-desktop">
+            <a href="#"
+              ><img src="images/function-ofbeauty.PNG" alt="brand-logo"
+            /></a>
+          </div>
+          <div class="about">
+            <a href="#quiz-page"
+              >about
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  /></svg></span
+            ></a>
+          </div>
+          <div class="account">
+            <a href="#quiz-page"
+              >account
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  /></svg></span
+            ></a>
+          </div>
+          <div class="cart">
+            <a href="#quiz-page"
+              >cart
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  /></svg></span
+            ></a>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="flex-1">
-            <div class="big-title">
-                <h2>custom shampoo & conditioner</h2>
-                <div class="stats">
-                    <img src="images/stars.png" alt="rating-stars">
-                    <p>86,271 REVIEWS</p>
-                </div>
-                <div class="desktop-text">
-                    <div class="text">
-                        <p>Use fully customizable shampoo + conditioner (the products that started it all) to reach your unique hair goals. Proven to:</p>
-                        <ul class="list">
-                            <li>Give your hair everything it needs to look and feel its best</li>
-                            <li>Deliver hard-working ingredients chosen for your hair type, structure, and moisture level</li>
-                            <li>Meet your needs. Select silicone-free, dye-free, or fragrance-free based on your preferences</li>
-                        </ul>
-                    </div>
-                    <button class="take-the-quiz">take the quiz</button>
-                </div>
+      <div class="hero-section">
+        <div class="big-title">
+          <h2>custom shampoo & conditioner</h2>
+          <div class="stats">
+            <img src="images/stars.png" alt="rating-stars" />
+            <p>86,271 REVIEWS</p>
+          </div>
+          <div class="desktop-text">
+            <div class="text">
+              <p>
+                Use fully customizable shampoo + conditioner (the products that
+                started it all) to reach your unique hair goals. Proven to:
+              </p>
+              <ul class="list">
+                <li>
+                  Give your hair everything it needs to look and feel its best
+                </li>
+                <li>
+                  Deliver hard-working ingredients chosen for your hair type,
+                  structure, and moisture level
+                </li>
+                <li>
+                  Meet your needs. Select silicone-free, dye-free, or
+                  fragrance-free based on your preferences
+                </li>
+              </ul>
             </div>
-            <section class="carousel" aria-label="Gallery">
-                <ol class="carousel__viewport">
-                    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <a href="#carousel__slide9" class="carousel__prev">Go to last slide</a>
-                            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-                        </div>
-                    </li>
-                    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-                        </div>     
-                    </li>
-                    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-                        </div>                        
-                    </li>
-                    <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide5" class="carousel__next">Go to next slide</a>
-                        </div>                     
-                    </li>
-                    <li id="carousel__slide5" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <a href="#carousel__slide4" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide6" class="carousel__next">Go to next slide</a>
-                        </div>
-                    </li>
-                    <li id="carousel__slide6" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <a href="#carousel__slide5" class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide7" class="carousel__next">Go to next slide</a>
-                        </div>
-                    </li>
-                    <li id="carousel__slide7" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <a href="#carousel__slide6" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide8" class="carousel__next">Go to next slide</a>
-                        </div>
-                    </li>
-                    <li id="carousel__slide8" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide7" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide9" class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide9" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                        <a href="#carousel__slide8" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-                    </div>
-                    </li>
-                </ol>
-                <aside class="carousel__navigation">
-                    <ol class="carousel__navigation-list">
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide5" class="carousel__navigation-button">Go to slide 5</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide6" class="carousel__navigation-button">Go to slide 6</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide7" class="carousel__navigation-button">Go to slide 7</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide8" class="carousel__navigation-button">Go to slide 8</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide9" class="carousel__navigation-button">Go to slide 9</a>
-                    </li>
-                    </ol>
-                </aside>
-            </section>
-
-        </div>
-
-        <div class="mobile-text">
             <button class="take-the-quiz">take the quiz</button>
+          </div>
+        </div>
+        <section class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide9" class="carousel__prev"
+                  >Go to last slide</a
+                >
+                <a href="#carousel__slide2" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide1" class="carousel__prev"
+                  >Go to previous slide</a
+                >
+                <a href="#carousel__slide3" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide2" class="carousel__prev"
+                  >Go to previous slide</a
+                >
+                <a href="#carousel__slide4" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide3" class="carousel__prev"
+                  >Go to previous slide</a
+                >
+                <a href="#carousel__slide5" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel__slide5" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide4" class="carousel__prev"
+                  >Go to previous slide</a
+                >
+                <a href="#carousel__slide6" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel__slide6" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide5" class="carousel__prev"
+                  >Go to previous slide</a
+                >
+                <a href="#carousel__slide7" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel__slide7" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide6" class="carousel__prev"
+                  >Go to previous slide</a
+                >
+                <a href="#carousel__slide8" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel__slide8" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide7" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide9" class="carousel__next"
+                >Go to next slide</a
+              >
+            </li>
+            <li id="carousel__slide9" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide8" class="carousel__prev"
+                  >Go to previous slide</a
+                >
+                <a href="#carousel__slide1" class="carousel__next"
+                  >Go to first slide</a
+                >
+              </div>
+            </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button"
+                  >Go to slide 1</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button"
+                  >Go to slide 2</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button"
+                  >Go to slide 3</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4" class="carousel__navigation-button"
+                  >Go to slide 4</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide5" class="carousel__navigation-button"
+                  >Go to slide 5</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide6" class="carousel__navigation-button"
+                  >Go to slide 6</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide7" class="carousel__navigation-button"
+                  >Go to slide 7</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide8" class="carousel__navigation-button"
+                  >Go to slide 8</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide9" class="carousel__navigation-button"
+                  >Go to slide 9</a
+                >
+              </li>
+            </ol>
+          </aside>
+        </section>
+      </div>
+
+      <div class="mobile-text">
+        <button class="take-the-quiz">take the quiz</button>
         <div class="text">
-            <p>Use fully customizable shampoo + conditioner (the products that started it all) to reach your unique hair goals. Proven to:</p>
-            <ul class="list">
-                <li>Give your hair everything it needs to look and feel its best</li>
-                <li>Deliver hard-working ingredients chosen for your hair type, structure, and moisture level</li>
-                <li>Meet your needs. Select silicone-free, dye-free, or fragrance-free based on your preferences</li>
+          <p>
+            Use fully customizable shampoo + conditioner (the products that
+            started it all) to reach your unique hair goals. Proven to:
+          </p>
+          <ul class="list">
+            <li>
+              Give your hair everything it needs to look and feel its best
+            </li>
+            <li>
+              Deliver hard-working ingredients chosen for your hair type,
+              structure, and moisture level
+            </li>
+            <li>
+              Meet your needs. Select silicone-free, dye-free, or fragrance-free
+              based on your preferences
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex-2">
+        <div class="prices">
+          <p>8oz, 16oz | $29 <span>.99</span> - $49 <span>.99</span></p>
+        </div>
+        <div class="highlited">
+          <div class="highlight"><span>TAKE THE HAIR QUIZ</span></div>
+          <div class="link">
+            <em>
+              <p>create your unique shampoo & conditioner formula today!</p>
+              <a
+                href="https://www.functionofbeauty.com/login/?dest=/product/shampoo-conditioner"
+                >already a customer? retrieve your formula here</a
+              ></em
+            >
+          </div>
+        </div>
+        <div class="the-quiz"></div>
+      </div>
+
+      <div class="ingredients">
+        <!--<h1>HIGH-PERFORMING, PERSONALIZED FORMULAS</h1>-->
+        <!-- For Web Accessibility, you should transform it Uppercase in CSS-->
+        <h1>High-performing, personalized formulas</h1>
+        <div class="badges-grid">
+          <div class="cruelty-free">
+            <img src="images/1.webp" alt="cruelty-free-icon" />
+          </div>
+          <div class="vegan"><img src="images/2.webp" alt="vegan" /></div>
+          <div class="sulfat-free">
+            <img src="images/3.webp" alt="sulfat-free" />
+          </div>
+          <div class="USA-custom">
+            <img src="images/4.webp" alt="customized-in-the-usa" />
+          </div>
+          <div class="sustainability">
+            <img src="images/5.webp" alt="sustainability-focused" />
+          </div>
+          <div class="dermatologist-testes">
+            <img src="images/6.webp" alt="dermatologist-testes" />
+          </div>
+        </div>
+        <button class="about-ingredients">learn about our ingredients</button>
+      </div>
+      <div class="cards">
+        <div class="ingredients-card">
+          <div class="content-1">
+            <p class="nbr-tag">1/3</p>
+            <h1>INGREDIENTS</h1>
+            <p>
+              All Function of Beauty products are formulated without sulfates,
+              parabens, phthalates, or gluten, and are always certified vegan
+              and cruelty-free. Our shampoos and conditioners can also be made
+              silicone-free, dye-free, or fragrance-free, based on your
+              preferences. We use more than 60 natural ingredients in our custom
+              formulations to help you achieve your ultimate hair goals.
+            </p>
+            <button>Take the quiz</button>
+          </div>
+          <div class="image-1">
+            <img src="images/tile-1.webp" alt="pink-conditionner" />
+          </div>
+        </div>
+        <div class="usage-card">
+          <div class="content-2">
+            <p class="nbr-tag">2/3</p>
+            <h1>RECOMMENDED USE</h1>
+            <p>
+              Apply shampoo to wet hair and massage into a lather. Rinse and
+              repeat (if necessary). Follow with enough conditioner to coat your
+              strands evenly from mid-shaft to ends, leaving it on for 1-2
+              minutes before rinsing it out thoroughly.
+            </p>
+            <button>DESIGN YOUR FORMULA</button>
+          </div>
+          <div class="image-2">
+            <img src="images/tile-2.webp" alt="pink-shampoo-in-bottle" />
+          </div>
+        </div>
+        <div class="great-card">
+          <div class="content-3">
+            <p class="nbr-tag">3/3</p>
+            <h1>GREAT FOR...</h1>
+            <p>
+              The Function of Beauty shampoo and conditioner is recommended for
+              all hair types as each product is specially formulated to address
+              your unique hair goals and needs.
+            </p>
+            <button>GET STARTED</button>
+          </div>
+          <div class="image-3">
+            <img src="images/tile-3.webp" alt="hair-types" />
+          </div>
+        </div>
+      </div>
+      <div class="rating-stats">
+        <h1>the people have spoken</h1>
+        <div class="rating-wrapper">
+          <div class="rating">
+            <img src="images/stars.png" alt="rating-stars" />
+            <span>4.7/5</span>
+          </div>
+          <div class="stats-fraction">
+            <p>86,271 REVIEWS</p>
+          </div>
+        </div>
+      </div>
+      <div class="questions">
+        <h1>got questions?</h1>
+        <div class="right">
+          <div class="questions-accordeon">
+            <ul class="accordion">
+              <li class="question-1">
+                <div class="question-show">
+                  <div class="question">
+                    I’m not sure what my hair profile is - help!
+                  </div>
+                  <button class="show">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="#69c8b2"
+                      class="bi bi-plus-lg"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="answer">
+                  <p>
+                    Of course - here are some more in-depth descriptions of each
+                    part of the hair quiz:
+                  </p>
+                  <h2>HAIR TYPE</h2>
+                  <ul>
+                    <li>
+                      Straight: Hair strands tend to not have a bend or a curl.
+                      Hair Type 1
+                    </li>
+                    <li>
+                      Wavy: Somewhere between straight and curly. Hair Type 2.
+                    </li>
+                    <li>
+                      Curly: Defined curl, S-shape, or loopy pattern. May be
+                      prone to frizz. Hair Type 3
+                    </li>
+                    <li>
+                      Coily: Tight curls, spirals, or zig-zag patterns.
+                      Sometimes referred to as “kinky” or “textured” hair. Hair
+                      Type 4.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="question-2">
+                <div class="question-show">
+                  <div class="question">What are the fragrances like?</div>
+                  <button class="show">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="#69c8b2"
+                      class="bi bi-plus-lg"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="answer">
+                  <p>
+                    We like to think we have something for everyone. Our
+                    signature fragrances are:
+                  </p>
+                  <ul>
+                    <li>
+                      nude (p)each: Top Notes: peach nectar, mandarin, lemon
+                      zest, jasmine. Reminds us of: cutting up fresh, juicy
+                      peaches on a hot summer day
+                    </li>
+                    <li>
+                      (pear)fection: Top Notes: pear, apple, sweet musk, subtle
+                      florals. Reminds us of: biting into a juicy pear on a
+                      crisp fall day.
+                    </li>
+                    <li>
+                      all (you)calyptus: Top Notes: eucalyptus, mint, lavender,
+                      rosemary. Reminds us of: an exhilarating hike through the
+                      misty mountain tops
+                    </li>
+                    <li>
+                      strike a (r)ose: Top Notes: Rose, black currant,
+                      sandalwood, orange blossom. Reminds us of: A cool, modern
+                      rose fragrance with a bit of edge
+                    </li>
+                    <li>
+                      true l(o)vender: Top notes: Lavender, Eucalyptus,
+                      Bergamot. Reminds us of: Relaxing in your clean sheets
+                      after a hot shower.
+                    </li>
+                    <li>
+                      floret: Top notes: Gardenia, rose, sandalwood, amber.
+                      Reminds us of: A memory of the seasons changing and
+                      flowers growing.
+                    </li>
+                    <li>
+                      fragrance-free: A great option for those with
+                      sensitivities
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="question-3">
+                <div class="question-show">
+                  <div class="question">
+                    Do your products work for all ethnicities?
+                  </div>
+                  <button class="show">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="#69c8b2"
+                      class="bi bi-plus-lg"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="answer">
+                  <p>
+                    Absolutely! Every single one of our products is individually
+                    filled and formulated based on your unique hair type and
+                    hair goals, which means they’ll actually work with your
+                    hair, not against it. We also never formulate with sulfates,
+                    parabens, phthalates, mineral oils, or gluten, so you can
+                    rest assured knowing that all of our products are safe and
+                    effective, regardless of your ethnicity or hair type.
+                  </p>
+                </div>
+              </li>
+              <li class="question-4">
+                <div class="question-show">
+                  <div class="question">How do I choose my hair goals?</div>
+                  <button class="show">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="#69c8b2"
+                      class="bi bi-plus-lg"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="answer">
+                  <p>
+                    You can give your hair care formula an extra boost by
+                    choosing up to five of our 18 hair goals:
+                  </p>
+                  <ul>
+                    <li>
+                      Strengthen: Increase your hair's natural resilience and
+                      elasticity, stimulate healthy hair, and help protect your
+                      hair from future breakage.
+                    </li>
+                    <li>
+                      Anti-Frizz: Nourish and soften the hair texture for a
+                      smoother appearance, while also protecting strands from
+                      added frizz, static, and breakage.
+                    </li>
+                    <li>
+                      Color Protection: Protect your hair from damaging UV rays,
+                      prevent dulling and fading, and enhance your strands'
+                      color retention to promote long-lasting, vibrant color.
+                    </li>
+                    <li>
+                      Curl Definition: Enhance and define your natural curls to
+                      achieve a smoother texture and improve their overall
+                      health and manageability.
+                    </li>
+                    <li>
+                      Deep Condition: Moisturize and deeply condition your hair
+                      from the inside out to help repair damage caused by heat
+                      and chemical processing. (*Best for those with wavy/curly,
+                      coarse, dry, or damaged hair.)
+                    </li>
+                    <li>
+                      Fix Split-Ends: Smooth, coat, and seal your split ends to
+                      create a sleek finish while also helping to prevent new
+                      split ends from forming.
+                    </li>
+                    <li>
+                      Hydrate: Restore your hair's natural moisture balance,
+                      prevent future moisture loss, and help treat damage with
+                      an added dose of long-lasting hydration that won't weigh
+                      your hair down.
+                    </li>
+                    <li>
+                      Replenish Hair: Replenish nutrient-depleted strands,
+                      reverse damage, and help protect your hair from
+                      environmental stressors with a unique blend of
+                      high-quality hair ingredients.
+                    </li>
+                    <li>
+                      Shine: Enhance your hair's natural shine and luster, while
+                      also improving your overall hair health.
+                    </li>
+                    <li>
+                      Straighten: Relax and tame unruly hair with a biolipid
+                      complex that coats each strand in a sheathing film to help
+                      naturally discipline hair even in humid conditions.
+                    </li>
+                    <li>
+                      Thermal Protection: Moisturize and condition heat damaged
+                      hair while also protecting strands from future damage
+                      caused by thermal styling.
+                    </li>
+                    <li>
+                      Volumize: Rejuvenate limp, lifeless strands and remove
+                      excess buildup to help inject your hair with added body
+                      and lift.
+                    </li>
+                    <li>
+                      Lengthen: A blend of high-quality ingredients, including
+                      pea sprout extract and blue-green algae, helps promote
+                      scalp circulation and follicle stimulation for stronger,
+                      healthier-looking hair.
+                    </li>
+                    <li>
+                      Oil Control: Stimulate and revitalize your scalp to help
+                      prevent excessive oil production for healthier-looking
+                      hair.
+                    </li>
+                    <li>
+                      Soothe Scalp: Moisturize and energize your scalp to help
+                      relieve discomfort, reduce buildup, and prevent dry, itchy
+                      flakes.
+                    </li>
+                    <li>
+                      Nourish Roots: Stimulate your hair roots and facilitate
+                      the transport of key nutrients to the hair shaft to
+                      promote healthier-looking hair.
+                    </li>
+                    <li>
+                      Anti-aging: Revitalize and strengthen your hair to help
+                      prevent premature aging caused by environmental stressors,
+                      heat and chemical styling, and nutrient loss.
+                    </li>
+                    <li>
+                      Reduce Brassiness: Deep purple pigments neutralize brassy
+                      (yellow/orange) tones to help promote brighter, more
+                      vibrant looking blonde hair, while also extending the life
+                      of your color. (*Note: This is a purple-colored shampoo,
+                      which is designed primarily for those with natural blonde,
+                      color-treated, bleached, highlighted, or gray hair.)
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
+          </div>
+          <button class="order-now">order now</button>
         </div>
-        </div>
-        <div class="flex-2">
-            <div class="prices">
-                <p>8oz, 16oz | $29 <span>.99</span> - $49 <span>.99</span></p>
-            </div>
-            <div class="highlited">
-                <div class="highlight"><span>TAKE THE HAIR QUIZ</span></div>
-                <div class="link">
-                   <em> <p>create your unique shampoo & conditioner formula today!</p>
-                    <a href="https://www.functionofbeauty.com/login/?dest=/product/shampoo-conditioner">already a customer? retrieve your formula here</a></em>
-                </div>
-            
-            </div>
-            <div class="the-quiz"></div>
-        </div>
-
-        <div class="ingredients">
-            <h1>HIGH-PERFORMING, PERSONALIZED FORMULAS</h1>
-            <div class="badges-grid">
-                <div class="cruelty-free"><img src="images/1.webp" alt="cruelty-free-icon"></div>
-                <div class="vegan"><img src="images/2.webp" alt="vegan"></div>
-                <div class="sulfat-free"><img src="images/3.webp" alt="sulfat-free"></div>
-                <div class="USA-custom"><img src="images/4.webp" alt="customized-in-the-usa"></div>
-                <div class="sustainability"><img src="images/5.webp" alt="sustainability-focused"></div>
-                <div class="dermatologist-testes"><img src="images/6.webp" alt="dermatologist-testes"></div>
-            </div>
-            <button class="about-ingredients">learn about our ingredients</button>
-        </div>
-        <div class="cards">
-            <div class="ingredients-card">
-                <div class="content-1">
-                    <p class="nbr-tag">1/3</p>
-                <h1>INGREDIENTS</h1>
-                <p>All Function of Beauty products are formulated without sulfates, parabens, phthalates, or gluten, and are always certified vegan and cruelty-free. Our shampoos and conditioners can also be made silicone-free, dye-free, or fragrance-free, based on your preferences. We use more than 60 natural ingredients in our custom formulations to help you achieve your ultimate hair goals.</p>
-                <button>TAKE THE QUIZ</button>
-                </div>
-                <div class="image-1">
-                    <img src="images/tile-1.webp" alt="pink-conditionner">
-                </div>
-            </div>
-            <div class="usage-card">
-                <div class="content-2">
-                    <p class="nbr-tag">2/3</p>
-                <h1>RECOMMENDED USE</h1>
-                <p>Apply shampoo to wet hair and massage into a lather. Rinse and repeat (if necessary). Follow with enough conditioner to coat your strands evenly from mid-shaft to ends, leaving it on for 1-2 minutes before rinsing it out thoroughly.</p>
-                <button>DESIGN YOUR FORMULA</button>
-                </div>
-                <div class="image-2">
-                    <img src="images/tile-2.webp" alt="pink-shampoo-in-bottle">
-                </div>
-            </div>
-            <div class="great-card">
-                <div class="content-3">
-                    <p class="nbr-tag">3/3</p>
-                <h1>GREAT FOR...</h1>
-                <p>The Function of Beauty shampoo and conditioner is recommended for all hair types as each product is specially formulated to address your unique hair goals and needs.</p>
-                <button>GET STARTED</button>
-                </div>
-                <div class="image-3">
-                    <img src="images/tile-3.webp" alt="hair-types">
-                </div>
-            </div>
-
-        </div>
-        <div class="rating-stats">
-            <h1>the people have spoken</h1>
-            <div class="rating-wrapper">
-                <div class="rating">
-                    <img src="images/stars.png" alt="rating-stars">
-                    <span>4.7/5</span>
-                </div>
-                <div class="stats-fraction">
-                    <p>86,271 REVIEWS</p>
-                </div>
-            </div>
-            
-        </div>
-        <div class="questions">
-            <h1>got questions?</h1>
-            <div class="right">
-                <div class="questions-accordeon">
-                    <ul class="accordion">
-                        <li class="question-1">
-                          <label for="question-1">I’m not sure what my hair profile is - help!<span><button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#69c8b2" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-                          </svg></button></span></label>
-                          <input id="question-1" type="checkbox" name="question-1" />
-                            <div class="answer">
-                                <p>Of course - here are some more in-depth descriptions of each part of the hair quiz:</p>
-                                <h2>HAIR TYPE</h2>
-                                <ul>
-                                <li> Straight: Hair strands tend to not have a bend or a curl. Hair Type 1</li>
-                                <li>Wavy: Somewhere between straight and curly. Hair Type 2.</li>
-                                <li>Curly: Defined curl, S-shape, or loopy pattern. May be prone to frizz. Hair Type 3</li>
-                                <li>Coily: Tight curls, spirals, or zig-zag patterns. Sometimes referred to as “kinky” or “textured” hair. Hair Type 4.</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="question-2">
-                            <label for="question-2">What are the fragrances like?<span><button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#69c8b2" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-                              </svg></button></span></label>
-                            <input id="question-2" type="checkbox" name="question-2" />
-                            <div class="answer">
-                                <p>We like to think we have something for everyone. Our signature fragrances are:</p>
-                                <ul>
-                                    <li>nude (p)each: Top Notes: peach nectar, mandarin, lemon zest, jasmine. Reminds us of: cutting up fresh, juicy peaches on a hot summer day</li>
-                                    <li>(pear)fection: Top Notes: pear, apple, sweet musk, subtle florals. Reminds us of: biting into a juicy pear on a crisp fall day.</li>
-                                    <li>all (you)calyptus: Top Notes: eucalyptus, mint, lavender, rosemary. Reminds us of: an exhilarating hike through the misty mountain tops</li>
-                                    <li>strike a (r)ose: Top Notes: Rose, black currant, sandalwood, orange blossom. Reminds us of: A cool, modern rose fragrance with a bit of edge</li>
-                                    <li>true l(o)vender: Top notes: Lavender, Eucalyptus, Bergamot. Reminds us of: Relaxing in your clean sheets after a hot shower.</li>
-                                    <li>floret: Top notes: Gardenia, rose, sandalwood, amber. Reminds us of: A memory of the seasons changing and flowers growing.</li>
-                                    <li>fragrance-free: A great option for those with sensitivities</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="question-3">
-                            <label for="question-3">Do your products work for all ethnicities?<span><button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#69c8b2" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-                              </svg></button></span></label>
-                            <input id="question-3" type="checkbox" name="question-3" />
-                            <div class="answer">
-                              <p>Absolutely! Every single one of our products is individually filled and formulated based on your unique hair type and hair goals, which means they’ll actually work with your hair, not against it. We also never formulate with sulfates, parabens, phthalates, mineral oils, or gluten, so you can rest assured knowing that all of our products are safe and effective, regardless of your ethnicity or hair type.</p>
-                            </div>
-                        </li>
-                        <li class="question-4">
-                            <label for="question-4">How do I choose my hair goals? <span><button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#69c8b2" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-                              </svg></button></span></label>
-                            <input id="question-4" type="checkbox" name="question-4" />
-                            <div class="answer">
-                                <p>You can give your hair care formula an extra boost by choosing up to five of our 18 hair goals:</p>
-                                <ul>
-                                    <li>Strengthen: Increase your hair's natural resilience and elasticity, stimulate healthy hair, and help protect your hair from future breakage.</li>
-                                    <li>Anti-Frizz: Nourish and soften the hair texture for a smoother appearance, while also protecting strands from added frizz, static, and breakage.</li>
-                                    <li>Color Protection: Protect your hair from damaging UV rays, prevent dulling and fading, and enhance your strands' color retention to promote long-lasting, vibrant color.</li>
-                                    <li>Curl Definition: Enhance and define your natural curls to achieve a smoother texture and improve their overall health and manageability.</li>
-                                    <li>Deep Condition: Moisturize and deeply condition your hair from the inside out to help repair damage caused by heat and chemical processing. (*Best for those with wavy/curly, coarse, dry, or damaged hair.)</li>
-                                    <li>Fix Split-Ends: Smooth, coat, and seal your split ends to create a sleek finish while also helping to prevent new split ends from forming.</li>
-                                    <li>Hydrate: Restore your hair's natural moisture balance, prevent future moisture loss, and help treat damage with an added dose of long-lasting hydration that won't weigh your hair down.</li>
-                                    <li>Replenish Hair: Replenish nutrient-depleted strands, reverse damage, and help protect your hair from environmental stressors with a unique blend of high-quality hair ingredients.</li>
-                                    <li>Shine: Enhance your hair's natural shine and luster, while also improving your overall hair health.</li>
-                                    <li>Straighten: Relax and tame unruly hair with a biolipid complex that coats each strand in a sheathing film to help naturally discipline hair even in humid conditions.</li>
-                                    <li>Thermal Protection: Moisturize and condition heat damaged hair while also protecting strands from future damage caused by thermal styling.</li>
-                                    <li>Volumize: Rejuvenate limp, lifeless strands and remove excess buildup to help inject your hair with added body and lift.</li>
-                                    <li>Lengthen: A blend of high-quality ingredients, including pea sprout extract and blue-green algae, helps promote scalp circulation and follicle stimulation for stronger, healthier-looking hair.</li>
-                                    <li>Oil Control: Stimulate and revitalize your scalp to help prevent excessive oil production for healthier-looking hair.</li>
-                                    <li>Soothe Scalp: Moisturize and energize your scalp to help relieve discomfort, reduce buildup, and prevent dry, itchy flakes.</li>
-                                    <li>Nourish Roots: Stimulate your hair roots and facilitate the transport of key nutrients to the hair shaft to promote healthier-looking hair.</li>
-                                    <li>Anti-aging: Revitalize and strengthen your hair to help prevent premature aging caused by environmental stressors, heat and chemical styling, and nutrient loss.</li>
-                                    <li>Reduce Brassiness: Deep purple pigments neutralize brassy (yellow/orange) tones to help promote brighter, more vibrant looking blonde hair, while also extending the life of your color. (*Note: This is a purple-colored shampoo, which is designed primarily for those with natural blonde, color-treated, bleached, highlighted, or gray hair.)</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div><button class="order-now">order now</button></div>
-            </div>
-            
-        </div>
+      </div>
     </main>
     <footer>
-        <div class="social-media-icons">
-            <img src="images/facebook.svg" alt="facebook-icon">
-            <img src="images/instagram.svg" alt="instagram-icon">
-            <img src="images/pinterest.svg" alt="pinterest-icon">
-            <img src="images/youtube.svg" alt="youtube-icon">
-            <img src="images/twitter.svg" alt="twitter-icon">
-        </div>
-        <div class="links">
-            <a href="https://www.functionofbeauty.com/contact-us/">contact</a>
-            <a href="https://www.functionofbeauty.com/careers/">careers</a>
-            <a href="https://www.functionofbeauty.com/privacy">privacy</a>
-            <a href="https://www.functionofbeauty.com/terms">terms</a>
-        </div>
+      <div class="social-media-icons">
+        <img src="images/facebook.svg" alt="facebook-icon" />
+        <img src="images/instagram.svg" alt="instagram-icon" />
+        <img src="images/pinterest.svg" alt="pinterest-icon" />
+        <img src="images/youtube.svg" alt="youtube-icon" />
+        <img src="images/twitter.svg" alt="twitter-icon" />
+      </div>
+      <div class="links">
+        <a href="https://www.functionofbeauty.com/contact-us/">contact</a>
+        <a href="https://www.functionofbeauty.com/careers/">careers</a>
+        <a href="https://www.functionofbeauty.com/privacy">privacy</a>
+        <a href="https://www.functionofbeauty.com/terms">terms</a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
